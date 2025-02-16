@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Form Container */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2.5rem;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+}
+
+textarea {
+    width: 100%;
+    height: 6rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+    text-align: left;
+}
+
+/* input[type="text"] {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+    text-align: left;
+} */
+
+/* input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.3);
+} */
+textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+textarea::placeholder {
+    color: #eee
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(106, 17, 203, 0.5);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3);
+}
+
+/* Result Section */
+#result {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(106, 17, 203, 0.6);
+}
